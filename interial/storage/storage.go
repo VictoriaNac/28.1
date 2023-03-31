@@ -1,7 +1,7 @@
 package storage
 
 import(
-	"28.1/interial/model"
+	"28.1/internal/storage"
 )
 
 type MemStorage struct{

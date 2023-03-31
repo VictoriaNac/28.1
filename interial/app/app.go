@@ -54,4 +54,3 @@ func (app *App) Run() {
 		}
 	}
 }
-}
