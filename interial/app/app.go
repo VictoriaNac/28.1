@@ -1,7 +1,7 @@
 package app
 
 import(
-	"28.1/internal/storage"
+	"github.com/VictoriaNac/28.1/interial/app"
 	"bufio"
 	"fmt"
 	"io"

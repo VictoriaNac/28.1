@@ -1,11 +1,11 @@
 package storage
 
 import(
-	"28.1/internal/storage"
+	"github.com/VictoriaNac/28.1/interial/storage"
 )
 
 type MemStorage struct{
-	studentByName map[string]*model.Student
+	studentByName map[string] *model.Student
 }
 
 
