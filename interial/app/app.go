@@ -1,7 +1,10 @@
+//2.взаимодействие с пользователем
+
 package app
 
 import(
-	"github.com/VictoriaNac/28.1/interial/app"
+	"github.com/VictoriaNac/28.1/interial/storage"
+	"github.com/VictoriaNac/28.1/interial/model"
 	"bufio"
 	"fmt"
 	"io"

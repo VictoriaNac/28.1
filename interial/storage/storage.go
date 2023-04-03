@@ -1,7 +1,9 @@
+//3.хранение данных в памяти
+
 package storage
 
 import(
-	"github.com/VictoriaNac/28.1/interial/storage"
+	"github.com/VictoriaNac/28.1/interial/model"
 )
 
 type MemStorage struct{
