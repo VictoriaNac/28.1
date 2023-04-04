@@ -1,7 +1,7 @@
 //1.описание данных с которыми мы будем работать
 
 
-package model  //старое название файла  "student"
+package model  
 
 type Student struct {
 	Name  string
