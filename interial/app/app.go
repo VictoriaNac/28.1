@@ -14,7 +14,7 @@ import(
 )
 
 type App struct{
-	storage *storage.MemStorage
+	Storage *storage.MemStorage
 }
 
 func (app *App) Run() {
@@ -49,7 +49,7 @@ func (app *App) Run() {
 		student := model.NewStudent(studentName, studentAge, studentGrade)
 	  
 
-		err = storage.Put(studentInfo)
+		err = app.Storage.Put(student)
 		if err != nil {
 			
 		} else {

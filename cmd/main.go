@@ -6,8 +6,12 @@ import (
 )
 
 func main(){
-
-	storage := storage.NewStorage() //экземпляр структуры репозитория
-	app := app.App(storage)      //экземпляр структуры приложения
+	
+//экземпляр структуры репозитория
+	storage := storage.NewStorage() 
+ //экземпляр структуры приложения
+	app := &app.App{
+		Storage:storage,
+		}                            
 	app.Run()
 }
