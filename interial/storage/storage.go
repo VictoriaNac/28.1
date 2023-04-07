@@ -16,7 +16,7 @@ func NewMemStorage() *MemStorage {
 	return &MemStorage{
 		studentByName: make(map[string]*model.Student),
 	}
-}
+}	
 
 func (ms *MemStorage) GetAll() ([] *model.Student, error){
 	var student []*model.Student
@@ -26,8 +26,11 @@ func (ms *MemStorage) GetAll() ([] *model.Student, error){
 	return student, nil
 }
 
-func (ms *MemStorage) Put(student *model.Student) error {
-	return nil
+func (ms *MemStorage) Put(student *model.Student) error { 
+	if _, found := ms.studentByName[student.Name]; !found {
+		ms.studentByName[student.Name] = student
+		return nil 
+	}
 }
 
 /*func NewStorage() *MemStorage {
